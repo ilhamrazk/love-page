@@ -1,0 +1,154 @@
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+@import 'swiper/css/effect-cards';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    background-color: #FFF8F2;
+    background-image: 
+      radial-gradient(#eedcd5 0.75px, transparent 0.75px),
+      radial-gradient(#e8d6ce 0.75px, #FFF8F2 0.75px);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+    color: #4A3532;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Custom romantic scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF8F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #E3B5C0;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C98291;
+}
+
+/* Torn paper edge simulation */
+.torn-paper-edge-bottom {
+  clip-path: polygon(
+    0% 0%, 100% 0%, 100% 92%,
+    97% 96%, 94% 92%, 91% 95%, 88% 91%, 85% 94%,
+    82% 90%, 79% 94%, 76% 91%, 73% 95%, 70% 92%,
+    67% 96%, 64% 91%, 61% 94%, 58% 90%, 55% 95%,
+    52% 92%, 49% 96%, 46% 91%, 43% 94%, 40% 91%,
+    37% 95%, 34% 92%, 31% 96%, 28% 91%, 25% 94%,
+    22% 91%, 19% 95%, 16% 92%, 13% 96%, 10% 91%,
+    7% 94%, 4% 91%, 0% 95%
+  );
+}
+
+.torn-paper-edge-top {
+  clip-path: polygon(
+    0% 8%, 4% 3%, 7% 7%, 10% 2%, 13% 8%, 16% 3%,
+    19% 7%, 22% 4%, 25% 8%, 28% 3%, 31% 7%, 34% 4%,
+    37% 8%, 40% 3%, 43% 7%, 46% 4%, 49% 8%, 52% 3%,
+    55% 7%, 58% 4%, 61% 8%, 64% 3%, 67% 7%, 70% 4%,
+    73% 8%, 76% 3%, 79% 7%, 82% 4%, 85% 8%, 88% 3%,
+    91% 7%, 94% 4%, 97% 8%, 100% 3%, 100% 100%, 0% 100%
+  );
+}
+
+/* Washi tape styling */
+.washi-tape {
+  position: absolute;
+  height: 24px;
+  background: rgba(246, 217, 216, 0.75);
+  backdrop-filter: blur(1px);
+  box-shadow: 0 1px 3px rgba(74, 53, 50, 0.12);
+  border-left: 2px dashed rgba(201, 130, 145, 0.35);
+  border-right: 2px dashed rgba(201, 130, 145, 0.35);
+  z-index: 20;
+}
+
+.washi-tape-peach {
+  background: rgba(243, 199, 183, 0.75);
+}
+
+.washi-tape-lavender {
+  background: rgba(221, 213, 232, 0.75);
+}
+
+/* Paper texture lines */
+.lined-paper {
+  background-color: #FFFDF9;
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 27px,
+    #F3E2DC 28px
+  );
+}
+
+/* Custom Swiper navigation styling for romantic theme */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #C98291 !important;
+  background: rgba(255, 253, 249, 0.85);
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 9999px;
+  box-shadow: 0 4px 12px rgba(74, 53, 50, 0.12);
+  backdrop-filter: blur(4px);
+  transition: all 0.2s ease;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 18px !important;
+  font-weight: bold;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transform: scale(1.08);
+  background: #FFFDF9;
+  color: #9E4D61 !important;
+}
+
+.swiper-pagination-bullet {
+  background: #C98291 !important;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  width: 22px !important;
+  border-radius: 6px !important;
+  background: #C98291 !important;
+}
+
+/* Heart sparkle animation */
+@keyframes heartSparkle {
+  0% {
+    transform: translate(-50%, -50%) scale(0.2) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -80px) scale(1.4) rotate(20deg);
+    opacity: 0;
+  }
+}
+
+.heart-click-particle {
+  position: fixed;
+  pointer-events: none;
+  z-index: 99999;
+  animation: heartSparkle 0.9s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
