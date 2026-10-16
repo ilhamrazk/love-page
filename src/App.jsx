@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { initialScrapbookData } from './data/memories';
 
 // Components
@@ -9,6 +9,7 @@ import FloatingMusicPlayer from './components/FloatingMusicPlayer';
 import Navigation from './components/Navigation';
 import PhotoLightbox from './components/PhotoLightbox';
 import EditMemoriesModal from './components/EditMemoriesModal';
+import WelcomeGateModal from './components/WelcomeGateModal';
 
 // Sections
 import HeroSection from './sections/HeroSection';
@@ -44,6 +45,26 @@ export default function App() {
 
   // Edit memories modal state
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
+
+  // Welcome Gate & Music playback state
+  const [showWelcomeGate, setShowWelcomeGate] = useState(true);
+  const [isAudioPlaying, setIsAudioPlaying] = useState(false);
+  const audioRef = useRef(null);
+
+  const handleOpenWithMusic = () => {
+    setShowWelcomeGate(false);
+    if (audioRef.current) {
+      audioRef.current.play().then(() => {
+        setIsAudioPlaying(true);
+      }).catch((err) => {
+        console.warn('Audio play error:', err);
+      });
+    }
+  };
+
+  const handleOpenWithoutMusic = () => {
+    setShowWelcomeGate(false);
+  };
 
   // Sync state to localStorage
   useEffect(() => {
@@ -149,11 +170,21 @@ export default function App() {
         />
       </main>
 
+      {/* Welcome Gate Modal */}
+      <WelcomeGateModal
+        isOpen={showWelcomeGate}
+        onOpenWithMusic={handleOpenWithMusic}
+        onOpenWithoutMusic={handleOpenWithoutMusic}
+      />
+
       {/* Floating Music Player */}
       <FloatingMusicPlayer
         songTitle={scrapbookData.couple.songTitle}
         songArtist={scrapbookData.couple.songArtist}
         songUrl={scrapbookData.couple.songUrl}
+        isPlaying={isAudioPlaying}
+        setIsPlaying={setIsAudioPlaying}
+        externalAudioRef={audioRef}
       />
 
       {/* Fullscreen Photo Lightbox Modal */}

@@ -2,16 +2,27 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Play, Pause, Volume2, VolumeX, Music, Info, Heart } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export default function FloatingMusicPlayer({ songTitle, songArtist, songUrl }) {
-  const [isPlaying, setIsPlaying] = useState(false);
+export default function FloatingMusicPlayer({
+  songTitle,
+  songArtist,
+  songUrl,
+  isPlaying: controlledIsPlaying,
+  setIsPlaying: controlledSetIsPlaying,
+  externalAudioRef,
+}) {
+  const [internalIsPlaying, setInternalIsPlaying] = useState(false);
+  const isPlaying = controlledIsPlaying !== undefined ? controlledIsPlaying : internalIsPlaying;
+  const setIsPlaying = controlledSetIsPlaying || setInternalIsPlaying;
+
+  const internalAudioRef = useRef(null);
+  const audioRef = externalAudioRef || internalAudioRef;
+
   const [volume, setVolume] = useState(0.6);
   const [isMuted, setIsMuted] = useState(false);
   const [progress, setProgress] = useState(0);
   const [duration, setDuration] = useState(0);
   const [isExpanded, setIsExpanded] = useState(false);
   const [showTooltip, setShowTooltip] = useState(false);
-
-  const audioRef = useRef(null);
 
   useEffect(() => {
     if (audioRef.current) {
