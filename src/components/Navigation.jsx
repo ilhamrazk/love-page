@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Heart, Sparkles, Image, Clock, MessageSquare, Gift, Settings, Menu, X, BookOpen } from 'lucide-react';
+import { Heart, Sparkles, Image, Clock, MessageSquare, Gift, Settings, Menu, X, BookOpen, Music } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const navItems = [
@@ -7,6 +7,7 @@ const navItems = [
   { id: 'carousel', label: 'Memories', icon: Image },
   { id: 'photowall', label: 'Photo Wall', icon: Sparkles },
   { id: 'story', label: 'Our Story', icon: Clock },
+  { id: 'singing', label: 'Suara Seng 🎤', icon: Music },
   { id: 'littlethings', label: 'Little Things', icon: Heart },
   { id: 'letter', label: 'Love Letter', icon: MessageSquare },
   { id: 'words', label: 'Words For You', icon: BookOpen },

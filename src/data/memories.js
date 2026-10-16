@@ -1,27 +1,28 @@
 // =========================================================================
-// ROMANTIC SCRAPBOOK PERSONAL DATA
-// You can edit all your photos, captions, love notes, and stories right here!
+// ROMANTIC SCRAPBOOK PERSONAL DATA — ILHAM (DUMBO) & ICA (SENG)
+// Special timeless scrapbook made with love for Ica ♡
 // =========================================================================
 
 export const initialScrapbookData = {
   couple: {
-    partnerName: "My Love",
-    yourName: "Always Yours",
-    relationshipStartYear: "2023",
-    subtitle: "Made with love, just for you ♡",
-    heroHeading: "Just you, me & all our little moments.",
-    heroSubheading: "A little scrapbook of our laughter, silly talks, and timeless memories.",
-    songTitle: "Our Sweet Melody",
-    songArtist: "Soft Lofi & Acoustic",
-    // You can replace this audio source with your own audio file url or /music.mp3 in public/ folder!
-    songUrl: "https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=romantic-ambient-111451.mp3"
+    partnerName: "Ica (Seng)",
+    yourName: "Dumbo (Ilham)",
+    relationshipStartDate: "20 Desember 2025",
+    relationshipStartYear: "2025",
+    subtitle: "Made with endless love, just for Seng ♡",
+    heroHeading: "Just you, me & all our little moments, Seng.",
+    heroSubheading: "Sebuah scrapbook kecil berisi tawa, perjuangan, melodi indah, dan cinta kita yang tak tergantikan.",
+    songTitle: "Back At One",
+    songArtist: "Brian McKnight (Lagu Kita ♡)",
+    songUrl: "/song/back-at-one.mp3",
+    videoUrl: "/video/ica-singing.mp4",
   },
 
   heroPhoto: {
     id: "hero-1",
-    url: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1200&auto=format&fit=crop",
-    caption: "My favorite human in the entire universe ♡",
-    date: "A quiet golden afternoon",
+    url: "/photos/ica-01.jpeg",
+    caption: "Senyuman termanis yang selalu jadi duniaku, Seng ♡",
+    date: "20 Desember 2025 — Selamanya",
     rotation: -2.5
   },
 
@@ -29,38 +30,45 @@ export const initialScrapbookData = {
   carouselMemories: [
     {
       id: "cm-1",
-      url: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=1200&auto=format&fit=crop",
-      caption: "That random day that turned into my absolute favorite memory.",
-      date: "Sunny Saturday afternoon",
-      tag: "Pure Happiness"
+      url: "/photos/ica-02.jpeg",
+      caption: "Tiap kali liat kamu senyum, semua beban Dumbo langsung hilang.",
+      date: "Momen Manis Kita",
+      tag: "Senyum Ica"
     },
     {
       id: "cm-2",
-      url: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop",
-      caption: "Still the smile that makes my entire day brighter.",
-      date: "Cozy coffee date",
-      tag: "Your Laugh"
+      url: "/photos/ica-03.jpeg",
+      caption: "Bersyukur banget Tuhan mempertemukan Dumbo sama Seng.",
+      date: "Bahagia Sederhana",
+      tag: "Kesayangan Dumbo"
     },
     {
       id: "cm-3",
-      url: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=1200&auto=format&fit=crop",
-      caption: "We didn't know this moment would stay in my heart forever.",
-      date: "Stargazing night",
-      tag: "Unforgettable"
+      url: "/photos/ica-04.jpeg",
+      caption: "Salah satu foto favorit yang selalu bikin kangen tiap hari.",
+      date: "Detik-Detik Berharga",
+      tag: "Bidadarinya Ilham"
     },
     {
       id: "cm-4",
-      url: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1200&auto=format&fit=crop",
-      caption: "Just us being us — quiet, peaceful, and totally at home.",
-      date: "Rainy Sunday",
-      tag: "Comfort"
+      url: "/photos/ica-05.jpeg",
+      caption: "Cuma kita berdua yang paham seberapa berharganya tiap momen ini.",
+      date: "Hangatnya Bersamamu",
+      tag: "Our Safe Place"
     },
     {
       id: "cm-5",
-      url: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1200&auto=format&fit=crop",
-      caption: "Caught you mid-laugh and fell in love all over again.",
-      date: "Walk through the park",
-      tag: "Golden Hour"
+      url: "/photos/ica-06.jpeg",
+      caption: "Nemenin kamu makan burger sambil ketawa bareng, surga kecilku hehehe 🍔",
+      date: "Burger Time!",
+      tag: "Happy Tummy"
+    },
+    {
+      id: "cm-6",
+      url: "/photos/ica-07.jpeg",
+      caption: "Di matamu, Dumbo selalu menemukan rumah untuk pulang.",
+      date: "Tetap Bersama",
+      tag: "Forever Yours"
     }
   ],
 
@@ -68,54 +76,54 @@ export const initialScrapbookData = {
   photoWall: [
     {
       id: "pw-1",
-      url: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1000&auto=format&fit=crop",
-      caption: "Your favorite view... and mine was looking right at you.",
-      date: "October breeze",
+      url: "/photos/ica-08.jpeg",
+      caption: "Cantik, teduh, dan selalu bikin hati adem liatnya ♡",
+      date: "Kenangan Manis",
       size: "large",
       rotation: -1.8,
       tapeColor: "peach"
     },
     {
       id: "pw-2",
-      url: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=800&auto=format&fit=crop",
-      caption: "When you stole my jacket because you were 'cold' 🤭",
-      date: "November evening",
+      url: "/photos/ica-09.jpeg",
+      caption: "Gemasnya Seng pas lagi candid begini 🥺",
+      date: "Candid Gemas",
       size: "small",
       rotation: 2.2,
       tapeColor: "rose"
     },
     {
       id: "pw-3",
-      url: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop",
-      caption: "Silly faces only we understand 😂",
-      date: "Late night road trip",
+      url: "/photos/ica-10.jpeg",
+      caption: "Muka imut yang nggak pernah gagal bikin Dumbo salting!",
+      date: "Silly & Cute",
       size: "small",
       rotation: -2.8,
       tapeColor: "lavender"
     },
     {
       id: "pw-4",
-      url: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=1000&auto=format&fit=crop",
-      caption: "Golden hour glow on your cheeks. Perfection.",
-      date: "Spring blossom",
+      url: "/photos/ica-11.jpeg",
+      caption: "Genggaman tangan yang nggak akan pernah aku lepasin.",
+      date: "Berdua Selalu",
       size: "medium",
       rotation: 1.5,
       tapeColor: "peach"
     },
     {
       id: "pw-5",
-      url: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop",
-      caption: "Our first Polaroid together. Kept safe in my wallet.",
-      date: "The beginning",
+      url: "/photos/ica-12.jpeg",
+      caption: "Tatapannya selalu penuh ketulusan dan doa.",
+      date: "Ketulusan Cinta",
       size: "medium",
       rotation: -1.2,
       tapeColor: "rose"
     },
     {
       id: "pw-6",
-      url: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=800&auto=format&fit=crop",
-      caption: "Looking at old memories thinking how lucky I am.",
-      date: "Every single day",
+      url: "/photos/ica-13.jpeg",
+      caption: "Dari sekian juta orang di bumi, Tuhan pilihkan kamu untukku.",
+      date: "Anugerah Terindah",
       size: "small",
       rotation: 2.7,
       tapeColor: "lavender"
@@ -126,38 +134,38 @@ export const initialScrapbookData = {
   storyTimeline: [
     {
       id: "st-1",
-      date: "Chapter 1",
-      title: "Somehow, the universe brought us together ♡",
-      description: "A random encounter, a shy hello, and a feeling that something wonderful was about to begin.",
-      image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=800&auto=format&fit=crop"
+      date: "Babak Pertama",
+      title: "Dipertemukan di Komunitas Date ♡",
+      description: "Siapa sangka, di antara ramainya orang di komunitas Date, Tuhan punya rencana yang begitu indah untuk mempertemukan kita berdua. Dari awal sapaan malu-malu dan senyuman manismu, takdir kita mulai terangkai.",
+      image: "/photos/ica-14.jpeg"
     },
     {
       id: "st-2",
-      date: "Chapter 2",
-      title: "The first endless conversation",
-      description: "Talking until 3 AM about everything and nothing. Time stopped existing whenever I spoke to you.",
-      image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=800&auto=format&fit=crop"
+      date: "Babak Kedua",
+      title: "Sering Nongkrong Bareng Teman-Teman Date",
+      description: "Dari kumpul dan nongkrong bareng teman-teman komunitas, perlahan obrolan kita jadi semakin nyambung dan akrab. Di setiap tawa dan canda malam itu, Dumbo mulai sadar kalau kehadiran Seng selalu yang paling ditunggu.",
+      image: "/photos/ica-15.jpeg"
     },
     {
       id: "st-3",
-      date: "Chapter 3",
-      title: "Our very first date & coffee jitters",
-      description: "You laughed at my nervous jokes. The iced coffee melted, but I didn't care because I couldn't stop looking at you.",
-      image: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=800&auto=format&fit=crop"
+      date: "Babak Ketiga",
+      title: "First Date di One Satrio: Ultramen & Taman 🍜",
+      description: "Kencan pertama kita yang nggak akan pernah terlupakan. Makan mangkok hangat Ultramen bareng sambil cerita dari hati ke hati, lalu jalan santai dan duduk di taman One Satrio menikmati angin malam berdua.",
+      image: "/photos/ica-16.jpeg"
     },
     {
       id: "st-4",
-      date: "Chapter 4",
-      title: "The day I knew you were the one",
-      description: "A quiet moment when you held my hand without saying a word. In that second, my whole world felt complete.",
-      image: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=800&auto=format&fit=crop"
+      date: "Babak Keempat",
+      title: "Melewati Segala Rintangan Bersama Tuhan Yesus",
+      description: "Perjalanan cinta kita nggak selalu mudah, ada kerikil dan air mata yang menguji. Tapi di setiap rintangan, kita belajar saling menguatkan, saling memaafkan, dan percaya bahwa Tuhan Yesus selalu menjaga dan menuntun langkah kita.",
+      image: "/photos/ica-17.jpeg"
     },
     {
       id: "st-5",
-      date: "Every Day Since",
-      title: "More beautiful chapters still being written...",
-      description: "From grocery runs and cooking disasters to quiet hugs and inside jokes, every chapter is sweeter with you.",
-      image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=800&auto=format&fit=crop"
+      date: "Babak Seterusnya",
+      title: "Sampai Maut yang Memisahkan Kita Berdua ♡",
+      description: "Dimulai resmi sejak 20 Desember 2025, doa Dumbo setiap hari cuma satu: semoga Tuhan terus jaga cinta kita, kuatkan langkah kita berdua, dan biarkan Dumbo mendampingi Seng sampai hari tua hingga maut memisahkan.",
+      image: "/photos/ica-18.jpeg"
     }
   ],
 
@@ -165,32 +173,32 @@ export const initialScrapbookData = {
   deskPolaroids: [
     {
       id: "dp-1",
-      url: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop",
-      caption: "you looked so cute here 🥹",
+      url: "/photos/ica-19.jpeg",
+      caption: "kamu selalu keliatan lucu banget disini 🥹",
       rotation: -3
     },
     {
       id: "dp-2",
-      url: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=600&auto=format&fit=crop",
-      caption: "my favorite person in the world ♡",
+      url: "/photos/ica-20.jpeg",
+      caption: "kesayangan Dumbo nomor satu di dunia ♡",
       rotation: 2.5
     },
     {
       id: "dp-3",
-      url: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=600&auto=format&fit=crop",
-      caption: "please tell me why we look this adorable 😂",
+      url: "/photos/ica-21.jpeg",
+      caption: "muka gemas yang selalu bikin hari jadi cerah 😂",
       rotation: -1.5
     },
     {
       id: "dp-4",
-      url: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=600&auto=format&fit=crop",
-      caption: "one for the memory box ✨",
+      url: "/photos/ica-22.jpeg",
+      caption: "disimpan rapi di hati Dumbo selamanya ✨",
       rotation: 3.2
     },
     {
       id: "dp-5",
-      url: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=600&auto=format&fit=crop",
-      caption: "forever my favorite smile 🌸",
+      url: "/photos/ica-23.jpeg",
+      caption: "senyum termanis yang nggak akan pernah terganti 🌸",
       rotation: -2.2
     }
   ],
@@ -199,57 +207,57 @@ export const initialScrapbookData = {
   littleThings: [
     {
       id: "lt-1",
-      preview: "Your laugh 🥹",
-      hidden: "The way you crinkle your nose and laugh so genuinely that everyone in the room smiles.",
+      preview: "Hobi Nyanyi Kamu 🎶",
+      hidden: "Aku suka banget liat kamu nyanyi dengan tulus dan lepas. Dimanapun kamu berada, nyanyianmu selalu bawa kehangatan tersendiri.",
       color: "bg-[#FFF9F2]",
       rotation: -1.5
     },
     {
       id: "lt-2",
-      preview: "Your sleepy voice ☕",
-      hidden: "That soft, cozy morning whisper that makes waking up the best part of my day.",
+      preview: "Suaramu yang Merdu Banget 🕊️",
+      hidden: "Suara merdu Seng itu ibarat obat penenang paling ampuh buat Dumbo. Pas lagi capek atau stres, denger suara kamu langsung bikin tenang.",
       color: "bg-[#FDF2F4]",
       rotation: 2
     },
     {
       id: "lt-3",
-      preview: "Random 2 AM texts 💌",
-      hidden: "Sending me silly memes, random thoughts, or 'did you sleep yet?' when we should be asleep.",
+      preview: "Senyuman Manis Ica 🌸",
+      hidden: "Senyum manismu yang tulus dan bikin matamu menyipit manis. Tiap liat kamu senyum, Dumbo selalu bersyukur Tuhan ciptakan kamu untukku.",
       color: "bg-[#F8F4FD]",
       rotation: -2
     },
     {
       id: "lt-4",
-      preview: "Your food dance 🍰",
-      hidden: "The tiny little wiggle you do whenever your favorite dish arrives at the table.",
+      preview: "Wanita yang Takut Akan Tuhan ✝️",
+      hidden: "Ketaatanmu, doamu yang tulus, dan imanmu kepada Tuhan Yesus adalah hal yang paling Dumbo kagumi dan banggakan dari diri Seng.",
       color: "bg-[#FFF9F2]",
       rotation: 1.5
     },
     {
       id: "lt-5",
-      preview: "How safe you make me feel 🧸",
-      hidden: "Whenever you hold my hand or hug me after a long day, all my worries just disappear.",
+      preview: "SUKA MAKAN BURGER HEHEHE 🍔",
+      hidden: "Ekspresi super bahagia kamu pas makan burger itu ngegemesin banget! Pokoknya siap anter Seng cari burger terenak di dunia kapan aja!",
       color: "bg-[#FDF2F4]",
       rotation: -2.5
     },
     {
       id: "lt-6",
-      preview: "The way you care 🌸",
-      hidden: "You always remember the tiny details I mention once, even when I forget myself.",
+      preview: "Know Everything About Me 🧸",
+      hidden: "Kamu tahu semua hal tentang Dumbo—kebiasaanku, kekuranganku, bahkan apa yang aku rasakan tanpa perlu banyak bicara. Kamu rumah terbaikku.",
       color: "bg-[#F8F4FD]",
       rotation: 2.2
     },
     {
       id: "lt-7",
-      preview: "Your cute little pout 🥺",
-      hidden: "When you pretend to be mad for 3 seconds before breaking into a smile.",
+      preview: "Ketegaran Hatimu yang Luar Biasa ✨",
+      hidden: "Meski perjalanan cinta kita penuh rintangan, Seng tetap tegar, sabar, dan setia menemani Dumbo. Terima kasih sudah sekuat ini ya, sayang.",
       color: "bg-[#FFF9F2]",
       rotation: -1.2
     },
     {
       id: "lt-8",
-      preview: "Simply... you ♡",
-      hidden: "Not just the highlights, but every single imperfect, wonderful, gorgeous piece of who you are.",
+      preview: "Simply... Seng, My Whole World ♡",
+      hidden: "Bukan cuma karena kelebihanmu, tapi dengan segala hal yang ada di dalam dirimu. Dumbo sayang banget sama Seng sampai maut memisahkan.",
       color: "bg-[#FDF2F4]",
       rotation: 1.8
     }
@@ -257,45 +265,46 @@ export const initialScrapbookData = {
 
   // 7. Love Letter / Envelope Interaction
   loveLetter: {
-    salutation: "Dear my favorite person,",
-    date: "A quiet moment together",
+    salutation: "Untuk Seng tersayang, belahan jiwaku,",
+    date: "20 Desember 2025 — Hingga Keabadian",
     paragraphs: [
-      "I don't know how to put everything I feel into words, but I wanted to make this digital scrapbook for you so you'd always have a place to come back to whenever you need a reminder of how deeply you are loved.",
-      "You make ordinary days feel like poetry. The way you look at me when you think I'm not looking, the warmth of your laughter, and the quiet comfort of just sitting next to you doing nothing at all — these are my favorite moments in life.",
-      "Thank you for being my sanctuary, my biggest cheerleader, and my favorite reason to smile. No matter where life takes us or how crazy the world gets, I'll always choose you, over and over again.",
+      "Semangat ya sayang... Dumbo tahu perjalanan yang kita lalui akhir-akhir ini tidak selalu mudah. Ada hari-hari yang terasa begitu berat, tantangan yang menguji, bahkan air mata yang mungkin sempat menetes di pipi manismu.",
+      "Tapi di tengah semua rasa lelah itu, Dumbo ingin Seng selalu ingat satu hal yang pasti: Tuhan Yesus selalu bersama kita, menjaga kita, dan tidak pernah sekalipun meninggalkan kita. Dia yang mempertemukan langkah kita di komunitas Date, dan Dia juga yang memegang kendali atas masa depan kita berdua.",
+      "Jangan pernah merasa berjuang sendirian ya, Seng. Kita jalanin semua ini bersama-sama—bergandengan tangan di setiap suka dan duka. Dumbo berjanji akan selalu ada di sampingmu, menghapus air matamu, mendengarkan suara merdumu bernyanyi, dan menemanimu makan burger kesukaanmu.",
+      "Terima kasih sudah memilih untuk tetap bertahan dan mencintai Dumbo apa adanya. Semoga cinta kita terus bertumbuh dalam lindungan-Nya, sampai rambut kita memutih, sampai hari tua, dan sampai maut yang memisahkan kita berdua nanti."
     ],
-    signOff: "Forever & always yours,",
-    authorName: "Ilham ♡",
-    ps: "P.S. You're still the cutest person I've ever known, and that will never change."
+    signOff: "Dengan segenap doa, cinta, dan pelukan hangat,",
+    authorName: "Dumbo (Ilham) ♡",
+    ps: "P.S. Jangan lupa tersenyum ya hari ini, Seng... senyumanmu itu alasan Dumbo selalu kuat menghadapi dunia!"
   },
 
   // 8. Torn Paper Quotes ("A Few Words For You")
   wordsForYou: [
     {
       id: "wf-1",
-      quote: "Every day with you feels like discovering a new favorite melody.",
-      date: "Written on a napkin",
+      quote: "Tuhan Yesus tidak pernah salah mempertemukan dua hati di waktu yang tepat. Bersamamu, aku menemukan damai.",
+      date: "Doa di Setiap Malam",
       rotation: -1.5,
       bg: "bg-[#FFFDF8]"
     },
     {
       id: "wf-2",
-      quote: "You turned ordinary days into my absolute favorite memories.",
-      date: "Post-it note thought",
+      quote: "Rintangan sebesar apapun tidak akan meruntuhkan cinta yang fondasinya dibangun di dalam Tuhan dan doa bersama.",
+      date: "Janji Setia Dumbo",
       rotation: 2.1,
       bg: "bg-[#FEF5F6]"
     },
     {
       id: "wf-3",
-      quote: "I'd choose you in every single version of our story, across every universe.",
-      date: "Late night whisper",
+      quote: "Duduk di taman One Satrio bareng kamu, makan Ultramen, dan ketawa lepas adalah definisi bahagia yang paling sempurna.",
+      date: "Kenangan First Date",
       rotation: -2.3,
       bg: "bg-[#F8F4FD]"
     },
     {
       id: "wf-4",
-      quote: "Home was never a place until I found myself safe in your arms.",
-      date: "Tucked between pages",
+      quote: "Sampai maut memisahkan nanti, genggaman tanganku tidak akan pernah lepas dari tanganmu, Seng.",
+      date: "Komitmen Seumur Hidup",
       rotation: 1.7,
       bg: "bg-[#FFFDF8]"
     }
@@ -306,67 +315,67 @@ export const initialScrapbookData = {
     {
       id: "my-1",
       icon: "📸",
-      title: "A Hidden Photo",
-      preview: "Tap to unwrap a golden moment",
+      title: "Foto Rahasia Kita",
+      preview: "Ketuk untuk membuka potret manis kesayangan",
       type: "photo",
       content: {
-        url: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=800&auto=format&fit=crop",
-        text: "The sun was setting and you asked me to take a quick snap. It ended up being my phone wallpaper for months."
+        url: "/photos/ica-24.jpeg",
+        text: "Momen manis pas Seng lagi senyum tanpa sadar kamera. Pemandangan paling indah di mata Dumbo!"
       }
     },
     {
       id: "my-2",
       icon: "💌",
-      title: "A Secret Note",
-      preview: "A sweet reminder just for you",
+      title: "Pesan Doa Khusus",
+      preview: "Pengingat manis saat kamu merasa lelah",
       type: "note",
       content: {
-        text: "You are doing amazing, and I am so proud of everything you do. Take a deep breath, I'm always right here with you. ♡"
+        text: "Filipi 4:13 — 'Segala perkara dapat kutanggung di dalam Dia yang memberi kekuatan kepadaku.' Jangan takut ya sayang, ada Tuhan Yesus dan ada Dumbo yang selalu ada buat Seng. ♡"
       }
     },
     {
       id: "my-3",
-      icon: "😂",
-      title: "A Funny Memory",
-      preview: "Remember that one time?",
+      icon: "🍔",
+      title: "Burger Date Coupon!",
+      preview: "Kupon spesial makan burger gratis!",
       type: "funny",
       content: {
-        text: "That time we tried cooking together and almost burned the kitchen down, then just ended up ordering takeout and eating on the floor laughing!"
+        text: "Kupon berlaku seumur hidup: 'Satu porsi burger favorit Seng + minum + pelukan hangat dari Dumbo!' Bisa ditukar kapan aja Seng lapar hehehe 🍔🥰"
       }
     },
     {
       id: "my-4",
-      icon: "🥹",
-      title: "A Heartfelt Moment",
-      preview: "A feeling I won't forget",
+      icon: "🍜",
+      title: "Kenangan Ultramen",
+      preview: "Nostalgia kencan pertama kita",
       type: "moment",
       content: {
-        text: "When you held my hand when I was feeling down and didn't ask questions. Just your quiet presence made everything okay."
+        text: "Inget nggak pas pertama kali kita makan Ultramen di One Satrio? Deg-degan tapi bahagia banget pas liat Seng tersenyum senang di seberang meja."
       }
     },
     {
       id: "my-5",
-      icon: "✨",
-      title: "A Sweet Promise",
-      preview: "Looking towards tomorrow",
+      icon: "✝️",
+      title: "Janji Suci Kita",
+      preview: "Janji cinta di hadapan Tuhan",
       type: "promise",
       content: {
-        text: "I promise to always bring you snacks when you're tired, listen to your rambles, and hold your hand through every chapter ahead."
+        text: "Dumbo berjanji untuk selalu menjaga hati Seng, menghormati Seng, mendoakan Seng setiap hari, dan berjuang bersama sampai maut memisahkan kita berdua nanti. Amin."
       }
     }
   ],
 
   // 13. Final Section Content
   finalSection: {
-    heading: "Here's to all the memories we've made...",
-    subheading: "...and all the ones we haven't made yet. ♡",
-    note: "Thank you for being the sweetest part of my life.",
-    signature: "Just you + me, always.",
+    heading: "Di setiap langkah dan rintangan yang kita lalui...",
+    subheading: "...Dumbo selalu memilih untuk menggenggam tangan Seng. ♡",
+    note: "Terima kasih sudah lahir ke dunia dan menjadi jawaban atas doa-doa Dumbo.",
+    signature: "Seng + Dumbo, 20 Desember 2025 — Selamanya.",
     collage: [
-      "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=600&auto=format&fit=crop"
+      "/photos/ica-25.jpeg",
+      "/photos/ica-26.jpeg",
+      "/photos/ica-27.jpeg",
+      "/photos/ica-28.jpeg"
     ]
   }
 };

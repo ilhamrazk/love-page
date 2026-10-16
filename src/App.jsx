@@ -20,9 +20,10 @@ import LittleThingsSection from './sections/LittleThingsSection';
 import LoveLetterSection from './sections/LoveLetterSection';
 import WordsForYouSection from './sections/WordsForYouSection';
 import MysteryMemorySection from './sections/MysteryMemorySection';
+import VideoSingingSection from './sections/VideoSingingSection';
 import FinalSection from './sections/FinalSection';
 
-const STORAGE_KEY = 'romantic_scrapbook_custom_data_v1';
+const STORAGE_KEY = 'romantic_scrapbook_ica_ilham_v2';
 
 export default function App() {
   const [scrapbookData, setScrapbookData] = useState(() => {
@@ -119,6 +120,9 @@ export default function App() {
           timeline={scrapbookData.storyTimeline}
           onOpenLightbox={(photo) => handleOpenLightbox(photo, [photo])}
         />
+
+        {/* SPECIAL: ICA'S SINGING VIDEO SECTION */}
+        <VideoSingingSection videoUrl={scrapbookData.couple.videoUrl || "/video/ica-singing.mp4"} />
 
         {/* 5. POLAROID DESK SCATTER */}
         <PolaroidDeskSection

@@ -23,10 +23,12 @@ export default function HeroSection({ heroPhoto, couple, onOpenLightbox }) {
           initial={{ opacity: 0, y: -15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FFFDF9]/80 border border-[#EADBD0] shadow-sm mb-6 text-xs text-scrapbook-brown/80"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FFFDF9]/90 border border-[#EADBD0] shadow-sm mb-4 text-xs text-scrapbook-brown/90"
         >
           <Heart className="w-3.5 h-3.5 fill-[#C98291] text-[#C98291]" />
           <span className="font-serif italic tracking-wide">{couple.subtitle || 'Made with love, just for you ♡'}</span>
+          <span className="text-[#C98291]">•</span>
+          <span className="font-sans font-semibold text-[11px] text-scrapbook-rose">20 Des 2025 — Selamanya</span>
           <Heart className="w-3.5 h-3.5 fill-[#C98291] text-[#C98291]" />
         </motion.div>
 
